@@ -6,3 +6,5 @@ jobs:
      - checkout
      # build the image
      - run: docker build -t f3rnand3s/circleci-docker-test .
+     - run: docker run -p 3000:3000 -d f3rnand3s/circleci-docker-test
+     - run: docker ps -a 
