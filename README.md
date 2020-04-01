@@ -1,2 +1,3 @@
 # circleci-docker-test
-status: not working
+
+This test includes using CircleCI to build a Docker image from this repo and validate it.
