@@ -1,9 +1,8 @@
- version: 2
- jobs:
-   build:
-     docker:
-       - image: circleci/node:latest
-     steps:
-       - checkout
-       - run: npm install
-       - run: npm test
+version: 2
+jobs:
+ build:
+   machine: true
+   steps:
+     - checkout
+     # build the application image
+     - run: docker build -t f3rnand3s/circleci-docker-test .
